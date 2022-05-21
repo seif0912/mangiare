@@ -287,6 +287,8 @@ header .menu .sp{
 
 /* header | end */
 
+// hero
+
 .hero{
     width: 100vw;
     height: 100vh;
@@ -302,3 +304,84 @@ header .menu .sp{
         background-color: rgba(0, 0, 0, 0.35);
     }
 }
+
+// hero | end
+
+// aboout
+
+.about{
+    padding-top: 75px;
+    padding-bottom: 100px;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .info{
+            min-width: 350px;
+            flex: 1;
+            img{
+                width: 85px;
+            }
+            h2{
+                margin-bottom: 0;
+                text-transform: capitalize;
+                color: #555;
+            }
+            h1{
+                font-family: 'Lobster';
+                text-transform: capitalize;
+                font-size: 55px;
+                color: var(--main-color-theme);
+                margin-top: 20px;
+            }
+            p{
+                line-height: 1.7;
+                color: #999;
+                width: 90%;
+                margin-bottom: 30px;
+            }
+            a{
+                color: var(--main-color-theme);
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 15px 25px;
+                border: 2px solid var(--main-color-theme);
+                border-radius: 5px;
+                transition: .3s;
+                &:hover{
+                    color: white;
+                    background-color: var(--main-color-theme);
+                }
+            }
+        }
+        .image{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1002px){
+    .about {
+        padding-top: 50px;
+        padding-bottom: 75px;
+        .container{
+            gap: 60px;
+            .info{
+                text-align: center;
+                p{
+                    width: unset;
+                }
+            }
+        }
+    }
+}
+
+
+// aboout | end
