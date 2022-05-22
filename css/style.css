@@ -626,4 +626,102 @@ header .menu .sp:hover .feature {
     padding-bottom: 75px;
   }
 }
+
+.discover {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background-color: #f9f9f9;
+}
+
+.discover .dishes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.discover .dishes .part .ticket {
+  width: 540px;
+  max-height: 123px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #ddd;
+  padding: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.discover .dishes .part .ticket:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.discover .dishes .part .ticket img {
+  height: 100px;
+}
+
+.discover .dishes .part .ticket .info {
+  padding: 10px 20px;
+}
+
+.discover .dishes .part .ticket .info h3 {
+  margin: 0 0 10px;
+  font-weight: normal;
+  color: #191b1d;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.discover .dishes .part .ticket .info p {
+  line-height: 1.7;
+  font-size: 13px;
+  color: #666;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 0;
+}
+
+.discover .dishes .part .ticket span {
+  font-size: 36px;
+  margin-right: 20px;
+  color: #777;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.discover .dishes .part .ticket:hover {
+  background-color: var(--main-color-theme);
+  border-color: var(--main-color-theme);
+}
+
+.discover .dishes .part .ticket:hover h3, .discover .dishes .part .ticket:hover p, .discover .dishes .part .ticket:hover span {
+  color: white;
+}
+
+@media (max-width: 630px) {
+  .discover .dishes .part .ticket {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: unset;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  .discover .dishes .part .ticket img {
+    width: 100%;
+    height: unset;
+  }
+}
 /*# sourceMappingURL=style.css.map */
