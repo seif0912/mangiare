@@ -612,3 +612,60 @@ header .menu .sp{
 }
 
 // dishes | end
+
+// rest
+
+.rest{
+    min-height: 300px;
+    background-image: url('../images/hero3.jpg');
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 100px 20px;
+    z-index: -2;
+    text-align: center;
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    h1{
+        font-family: 'Great Vibes';
+        font-size: 60px;
+        text-transform: capitalize;
+        color: white;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    p{
+        color: white;
+        max-width: 1000px;
+        margin: auto;
+        line-height: 1.7;
+    }
+    a{
+        display: inline-block;
+        padding: 15px 25px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        transition: .3s;
+        letter-spacing: 1px;
+        font-weight: bold;
+        &:hover{
+            color: var(--main-color-theme);
+            background-color: white;
+        }
+    }
+}
+
+// rest | end
+
