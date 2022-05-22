@@ -782,4 +782,184 @@ header .menu .sp:hover .feature {
   color: var(--main-color-theme);
   background-color: white;
 }
+
+.chef {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+.chef .chefs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.chef .chefs .box {
+  width: 350px;
+  position: relative;
+}
+
+.chef .chefs .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.chef .chefs .box:hover::before {
+  opacity: 1;
+}
+
+.chef .chefs .box img {
+  width: 100%;
+}
+
+.chef .chefs .box .details {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.chef .chefs .box .details h3 {
+  background-color: var(--main-color-theme);
+  padding: 8px 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.chef .chefs .box .details p {
+  background-color: var(--main-color-theme);
+  padding: 8px 20px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  text-align: end;
+  margin-left: auto;
+  margin-right: -15px;
+}
+
+.chef .chefs .box:hover .details {
+  opacity: 0;
+}
+
+.chef .chefs .box .social {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 120px;
+  z-index: 9;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.chef .chefs .box .social li {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) rotate(0);
+          transform: translate(-50%, -50%) rotate(0);
+  top: 50%;
+  left: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 11;
+}
+
+.chef .chefs .box .social li a {
+  cursor: pointer;
+}
+
+.chef .chefs .box .social li a i {
+  color: white;
+}
+
+.chef .chefs .box .social li:nth-child(1) {
+  top: -40px;
+  left: -40px;
+}
+
+.chef .chefs .box .social li:nth-child(2) {
+  top: 0px;
+  left: 40px;
+}
+
+.chef .chefs .box .social li:nth-child(3) {
+  top: 120px;
+  left: -40px;
+}
+
+.chef .chefs .box .social li:nth-child(4) {
+  top: 160px;
+  left: 40px;
+}
+
+.chef .chefs .box .social::before {
+  position: absolute;
+  content: '';
+  -webkit-transform: translate(-50%, -50%) rotate(0);
+          transform: translate(-50%, -50%) rotate(0);
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  border: 1px solid white;
+  z-index: 8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.chef .chefs .box:hover .social {
+  opacity: 1;
+}
+
+.chef .chefs .box:hover .social::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 200px;
+  height: 200px;
+}
+
+.chef .chefs .box:hover .social li:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.chef .chefs .box:hover .social li:nth-child(2) {
+  top: 40px;
+  left: 0;
+}
+
+.chef .chefs .box:hover .social li:nth-child(3) {
+  top: 80px;
+  left: 0;
+}
+
+.chef .chefs .box:hover .social li:nth-child(4) {
+  top: 120px;
+  left: 0;
+}
 /*# sourceMappingURL=style.css.map */

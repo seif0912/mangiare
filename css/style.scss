@@ -669,3 +669,152 @@ header .menu .sp{
 
 // rest | end
 
+// chef
+
+.chef{
+    padding-top: 75px;
+    padding-bottom: 100px;
+    .chefs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+        .box{
+            width: 350px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.75);
+                opacity: 0;
+                transition: .5s;
+            }
+            &:hover::before{
+                opacity: 1;
+            }
+            img{
+                width: 100%;
+            }
+            .details{
+                position: absolute;
+                bottom: 50px;
+                right: 30px;
+                transition: .2s;
+                h3{
+                    background-color: var(--main-color-theme);
+                    padding: 8px 20px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+                p{
+                    background-color: var(--main-color-theme);
+                    padding: 8px 20px;
+                    text-transform: capitalize;
+                    color: white;
+                    font-weight: normal;
+                    font-size: 14px;
+                    width: fit-content;
+                    margin: 0;
+                    text-align: end;
+                    margin-left: auto;
+                    margin-right: -15px;
+                }
+            }
+            &:hover .details{
+                opacity: 0;
+            }
+            .social{
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                height: 120px;
+                z-index: 9;
+                opacity: 0;
+                transition: .5s;
+                li{
+                    position: absolute;
+                    transform: translate(-50%, -50%) rotate(0);
+                    top: 50%;
+                    left: 50%;
+                    transition: .3s;
+                    z-index: 11;
+                    a {
+                        cursor: pointer;
+                        i{
+                            color: white;
+                        }
+                    }
+                    &:nth-child(1){
+                        top: -40px;
+                        left: -40px;
+                    }
+                    &:nth-child(2){
+                        top: 0px;
+                        left: 40px;
+                    }
+                    &:nth-child(3){
+                        top: 120px;
+                        left: -40px;
+                    }
+                    &:nth-child(4){
+                        top: 160px;
+                        left: 40px;
+                    }
+                    
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    transform: translate(-50%, -50%) rotate(0);
+                    top: 50%;
+                    left: 50%;
+                    width: 1px;
+                    height: 1px;
+                    border: 1px solid white;
+                    z-index: 8;
+                    transition: .3s;
+                }
+            }
+            &:hover .social{
+                opacity: 1;
+            }
+            &:hover .social{
+
+                &::before{
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 200px;
+                    height: 200px;
+                }
+                li{
+                    &:nth-child(1){
+                        top: 0;
+                        left: 0;
+                    }
+                    &:nth-child(2){
+                        top: 40px;
+                        left: 0;
+                    }
+                    &:nth-child(3){
+                        top: 80px;
+                        left: 0;
+                    }
+                    &:nth-child(4){
+                        top: 120px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// chef | end
