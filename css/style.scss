@@ -75,6 +75,23 @@ ul {
     margin-top: 20px;
 }
 
+// head title
+.head{
+    text-align: center;
+    img{
+        width: 80px;
+    }
+    h1.title{
+        margin: 10px 0 0;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 34px;
+        color: #111;
+        margin: 0;
+    }
+}
+
 /* End Global rules */
 
 
@@ -423,7 +440,7 @@ header .menu .sp{
         .info{
             width: 50%;
             text-align: center;
-            padding: 50px ;
+            padding: 0 50px 0;
             
             img{
                 width: 85px;
@@ -479,3 +496,41 @@ header .menu .sp{
 }
 
 // special dishes | end
+
+// speciality
+
+.speciality{
+    padding-top: 75px;
+    padding-bottom: 100px;
+    .info{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        .box{
+            max-width: 300px;
+            img{
+                width: 80px;
+                transition: .3s;
+            }
+            &:hover img{
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+            h3{
+                text-transform: capitalize;
+                color: #191b1d;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .speciality{
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+}
+
+// speciality | end

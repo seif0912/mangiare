@@ -70,6 +70,25 @@ ul {
   margin-top: 20px;
 }
 
+.head {
+  text-align: center;
+}
+
+.head img {
+  width: 80px;
+}
+
+.head h1.title {
+  margin: 10px 0 0;
+}
+
+.head h2 {
+  text-transform: uppercase;
+  font-size: 34px;
+  color: #111;
+  margin: 0;
+}
+
 /* End Global rules */
 /* header */
 body {
@@ -507,7 +526,7 @@ header .menu .sp:hover .feature {
 .special-dishes .container .info {
   width: 50%;
   text-align: center;
-  padding: 50px;
+  padding: 0 50px 0;
 }
 
 .special-dishes .container .info img {
@@ -560,6 +579,51 @@ header .menu .sp:hover .feature {
     padding: unset;
     padding-top: 50px;
     width: 100%;
+  }
+}
+
+.speciality {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+.speciality .info {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.speciality .info .box {
+  max-width: 300px;
+}
+
+.speciality .info .box img {
+  width: 80px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.speciality .info .box:hover img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.speciality .info .box h3 {
+  text-transform: capitalize;
+  color: #191b1d;
+}
+
+@media (max-width: 768px) {
+  .speciality {
+    padding-top: 50px;
+    padding-bottom: 75px;
   }
 }
 /*# sourceMappingURL=style.css.map */
