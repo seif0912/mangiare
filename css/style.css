@@ -962,4 +962,97 @@ header .menu .sp:hover .feature {
   top: 120px;
   left: 0;
 }
+
+.event {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../images/event-show.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.event::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.event .box {
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  z-index: 5;
+}
+
+.event .box .image {
+  width: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.event .box .image img {
+  width: 100%;
+}
+
+.event .box .info {
+  text-align: center;
+  color: white;
+  max-width: 500px;
+}
+
+.event .box .info h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.event .box .info p {
+  line-height: 1.5;
+  color: #eaeaea;
+  margin-bottom: 25px;
+}
+
+.event .box .info a {
+  text-transform: uppercase;
+  color: white;
+  padding: 13px 25px;
+  border: 2px solid white;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.event .box .info a:hover {
+  background-color: var(--main-color-theme);
+  border-color: var(--main-color-theme);
+}
 /*# sourceMappingURL=style.css.map */
