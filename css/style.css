@@ -1011,12 +1011,12 @@ header .menu .sp:hover .feature {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 10px;
-  background-color: #eee;
 }
 
 .event .box .image img {
   width: 100%;
+  padding: 10px;
+  background-color: #eee;
 }
 
 .event .box .info {
@@ -1054,5 +1054,88 @@ header .menu .sp:hover .feature {
 .event .box .info a:hover {
   background-color: var(--main-color-theme);
   border-color: var(--main-color-theme);
+}
+
+.testimonial {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+.testimonial .slider {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonial .slider i {
+  padding: 5px 10px;
+  border: 1px solid var(--main-color-theme);
+  color: var(--main-color-theme);
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.testimonial .slider i:hover {
+  color: white;
+  background-color: var(--main-color-theme);
+}
+
+.testimonial .slider .testi {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 95%;
+  overflow-x: auto;
+  gap: 40px;
+  right: 0;
+  overscroll-behavior-inline: contain;
+}
+
+.testimonial .slider .testi .box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.testimonial .slider .testi .box .image {
+  width: 100px;
+  margin: 0;
+}
+
+.testimonial .slider .testi .box .image img {
+  width: 100%;
+  border-radius: 50%;
+  margin: 0;
+  border: 8px solid #eaeaea;
+}
+
+.testimonial .slider .testi .box p {
+  max-width: 1000px;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.testimonial .slider .testi .box h3 {
+  color: var(--main-color-theme);
+  text-transform: uppercase;
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
