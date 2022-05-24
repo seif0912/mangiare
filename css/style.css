@@ -91,7 +91,6 @@ ul {
 /* End Global rules */
 /* header */
 body {
-  height: 2000px;
   position: relative;
 }
 
@@ -821,7 +820,7 @@ header .menu .sp:hover .feature {
   background-attachment: fixed;
   position: relative;
   padding: 100px 20px;
-  z-index: -2;
+  z-index: 1;
   text-align: center;
 }
 
@@ -833,7 +832,12 @@ header .menu .sp:hover .feature {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 2;
+}
+
+.rest img {
+  position: relative;
+  z-index: 5;
 }
 
 .rest h1 {
@@ -843,6 +847,8 @@ header .menu .sp:hover .feature {
   color: white;
   font-weight: normal;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 5;
 }
 
 .rest p {
@@ -850,6 +856,8 @@ header .menu .sp:hover .feature {
   max-width: 1000px;
   margin: auto;
   line-height: 1.7;
+  position: relative;
+  z-index: 5;
 }
 
 .rest a {
@@ -864,6 +872,8 @@ header .menu .sp:hover .feature {
   transition: .3s;
   letter-spacing: 1px;
   font-weight: bold;
+  position: relative;
+  z-index: 5;
 }
 
 .rest a:hover {
@@ -1425,5 +1435,17 @@ footer .copy a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.hero-about-us {
+  height: 400px;
+  background-image: url("../images/breadcrumb.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial.about-us-1,
+.speciality.about-us-1 {
+  background-color: #f9f9f9;
 }
 /*# sourceMappingURL=style.css.map */

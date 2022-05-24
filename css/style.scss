@@ -97,7 +97,6 @@ ul {
 
 /* header */
 body{
-    height: 2000px;
     position: relative;
 }
 
@@ -706,7 +705,7 @@ header .menu .sp{
     background-attachment: fixed;
     position: relative;
     padding: 100px 20px;
-    z-index: -2;
+    z-index: 1;
     text-align: center;
     &::before{
         content: '';
@@ -716,7 +715,11 @@ header .menu .sp{
         width: 100%;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: 2;
+    }
+    img{
+        position: relative;
+        z-index: 5;
     }
     h1{
         font-family: 'Great Vibes';
@@ -725,12 +728,16 @@ header .menu .sp{
         color: white;
         font-weight: normal;
         margin-bottom: 20px;
+        position: relative;
+        z-index: 5;
     }
     p{
         color: white;
         max-width: 1000px;
         margin: auto;
         line-height: 1.7;
+        position: relative;
+        z-index: 5;
     }
     a{
         display: inline-block;
@@ -743,6 +750,8 @@ header .menu .sp{
         transition: .3s;
         letter-spacing: 1px;
         font-weight: bold;
+        position: relative;
+        z-index: 5;
         &:hover{
             color: var(--main-color-theme);
             background-color: white;
@@ -1208,3 +1217,19 @@ footer{
 }
 
 // footer | end
+
+// about-us-1
+
+.hero-about-us{
+    height: 400px;
+    background-image: url('../images/breadcrumb.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonial.about-us-1,
+.speciality.about-us-1{
+    background-color: #f9f9f9;
+}
+
+// about-us-1 | end
