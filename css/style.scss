@@ -124,8 +124,8 @@ header .container{
     align-items: center;
     justify-content: space-between;
 }
-
-header #logo{
+ 
+#logo{
     display: flex;
     align-items: center;
     gap: 13px;
@@ -1006,9 +1006,6 @@ header .menu .sp{
                         outline: none;
                     }
                 }
-                // option{
-                //     width: 100%;
-                // }
             }
             input[type="submit"]{
                 background-color: var(--main-color-theme);
@@ -1031,3 +1028,100 @@ header .menu .sp{
 }
 
 // reservation | end
+
+// footer
+
+footer{
+    background-color: #333;
+    .container{
+        padding-top: 50px;
+        padding-bottom: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px dashed #555;
+        .box{
+            max-width: 410px;
+            color: #999;
+            p{
+                line-height: 1.4;
+            }
+            .social{
+                display: flex;
+                gap: 10px;
+                li{
+                    a i{
+                        color: #aaa;
+                        position: relative;
+                        z-index: 5;
+                        padding: 15px;
+                        background-color: #555;
+                        border-radius: 50%;
+                        transition: .3s;
+                        &:hover{
+                            background-color: #fafafa;
+                            color: var(--main-color-theme);
+                        }
+                    }
+                }
+            }
+            h2{
+                text-transform: uppercase;
+                color: #fafafa;
+                text-align: center;
+                margin-bottom: 30px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+            .days{
+                display: flex;
+                gap: 40px;
+                
+                .daysG{
+                    .day{
+                        margin-bottom: 20px;
+                        h4{
+                            color: rgba(255, 255, 255, 0.9);
+                            margin-top: 0;
+                            margin-bottom: 5px;
+                            text-transform: capitalize;
+                        }
+                        span{
+                            color: rgba(255, 255, 255, 0.75);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy{
+        text-align: center;
+        padding: 20px;
+        color: #999;
+        line-height: 1.5;
+        a{
+            color: var(--main-color-theme);
+            font-weight: 600;
+            text-transform: capitalize;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 811px){
+    footer .container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        #logo{
+            justify-content: center;
+        }
+        .social{
+            justify-content: center;
+        }
+    }
+}
+
+// footer | end
