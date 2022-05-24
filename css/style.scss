@@ -109,8 +109,9 @@ header{
     margin-top: 40px;
     transition: .5s;
     &.sticky{
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.8);
         margin-top: unset;
+        backdrop-filter: blur(2px);
         .container{
             background-color: unset;
         }
@@ -123,6 +124,39 @@ header .container{
     height: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+
+.burger {
+    height: fit-content;
+    transition: 0.5s;
+    display: none;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.burger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    display: block;
+    transition: inherit;
+}
+
+.burger span:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.burger.clicked span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.clicked span:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.burger.clicked span:nth-child(3) {
+    transform: rotate(45deg) translate(-4px, -6px);
 }
  
 #logo{
@@ -172,6 +206,55 @@ header .menu{
             
         }
 
+    }
+}
+
+@media (max-width: 1034px){
+    header{
+        margin-top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        .container{
+            justify-content: space-between;
+            background-color: unset;
+            .menu{
+                display: none;
+                right: -200%;
+                transition: 1s ease-out;
+                display: block;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                position: absolute;
+                opacity: 0;
+                top: 80px;
+                width: 80%;
+                height: unset;
+                background-color: rgba(0, 0, 0, 0.9);
+                
+                li{
+                    padding: 15px 5px;
+                    .main-link:hover::before{
+                        bottom: 15px;
+                    }
+                }
+                &.active{
+                    right: 0;
+                    opacity: 1;
+                }
+                .sub-menu{
+                    display: none;
+                }
+                .feature{
+                    display: none;
+                }
+            }
+            .burger{
+                display: block;
+                left: 0;
+                // height: 100%;
+                
+            }
+        }
     }
 }
 

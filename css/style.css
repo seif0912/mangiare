@@ -106,8 +106,10 @@ header {
 }
 
 header.sticky {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   margin-top: unset;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 header.sticky .container {
@@ -126,6 +128,44 @@ header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.burger {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  display: block;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.burger span:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.burger.clicked span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.clicked span:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+          transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.burger.clicked span:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-4px, -6px);
+          transform: rotate(45deg) translate(-4px, -6px);
 }
 
 #logo {
@@ -191,6 +231,55 @@ header .menu > li .main-link:hover {
 
 header .menu > li .main-link:hover::before {
   width: 100%;
+}
+
+@media (max-width: 1034px) {
+  header {
+    margin-top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  header .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: unset;
+  }
+  header .container .menu {
+    display: none;
+    right: -200%;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: absolute;
+    opacity: 0;
+    top: 80px;
+    width: 80%;
+    height: unset;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  header .container .menu li {
+    padding: 15px 5px;
+  }
+  header .container .menu li .main-link:hover::before {
+    bottom: 15px;
+  }
+  header .container .menu.active {
+    right: 0;
+    opacity: 1;
+  }
+  header .container .menu .sub-menu {
+    display: none;
+  }
+  header .container .menu .feature {
+    display: none;
+  }
+  header .container .burger {
+    display: block;
+    left: 0;
+  }
 }
 
 header .sub-menu {
