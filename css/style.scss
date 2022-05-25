@@ -1220,11 +1220,45 @@ footer{
 
 // about-us-1
 
-.hero-about-us{
+.hero-about-us-1{
     height: 400px;
     background-image: url('../images/breadcrumb.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 230px;
+        h1{
+            font-family: 'Great Vibes', cursive;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            font-size: 60px;
+            font-weight: normal;
+            color: var(--main-color-theme);
+        }
+        p{
+            color: white;
+            a{
+                color: white;
+                transition: .3s;
+                &:hover{
+                    color: var(--main-color-theme);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .hero-about-us-1 .container{
+        flex-direction: column;
+        h1{
+            margin: 0;
+        }
+    }
 }
 
 .testimonial.about-us-1,

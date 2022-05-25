@@ -1437,11 +1437,60 @@ footer .copy a:hover {
   }
 }
 
-.hero-about-us {
+.hero-about-us-1 {
   height: 400px;
   background-image: url("../images/breadcrumb.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.hero-about-us-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 230px;
+}
+
+.hero-about-us-1 .container h1 {
+  font-family: 'Great Vibes', cursive;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 60px;
+  font-weight: normal;
+  color: var(--main-color-theme);
+}
+
+.hero-about-us-1 .container p {
+  color: white;
+}
+
+.hero-about-us-1 .container p a {
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.hero-about-us-1 .container p a:hover {
+  color: var(--main-color-theme);
+}
+
+@media (max-width: 600px) {
+  .hero-about-us-1 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-about-us-1 .container h1 {
+    margin: 0;
+  }
 }
 
 .testimonial.about-us-1,
