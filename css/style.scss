@@ -97,6 +97,24 @@ ul {
         }
     }
 }
+//link
+.link{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--main-color-theme);
+    border-radius: 3px;
+    border: 2px solid var(--main-color-theme);
+    display: inline-block;
+    padding: 13px 25px;
+    margin-top: 35px;
+    letter-spacing: 1px;
+    transition: .3s;
+    &:hover{
+        color: white;
+        background-color: var(--main-color-theme);
+    }
+}
+
 
 /* End Global rules */
 
@@ -1357,22 +1375,6 @@ footer{
                     }
                 }
             }
-            a{
-                text-transform: uppercase;
-                font-weight: 600;
-                color: var(--main-color-theme);
-                border-radius: 3px;
-                border: 2px solid var(--main-color-theme);
-                display: inline-block;
-                padding: 13px 25px;
-                margin-top: 35px;
-                letter-spacing: 1px;
-                transition: .3s;
-                &:hover{
-                    color: white;
-                    background-color: var(--main-color-theme);
-                }
-            }
         }
         .image{
             flex: 1;
@@ -1394,3 +1396,54 @@ footer{
 }
 
 // about-us-2 | end
+
+// para
+
+.para{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f9f9f9;
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .image{
+            flex: 1;
+            img{
+                width: 100%;
+            }
+        }
+        .info{
+            flex: 1;
+
+            img{
+                width: 80px;
+            }
+            h2{
+                text-transform: capitalize;
+                font-size: 30px;
+                color: #111;
+                margin: 0;
+                margin-bottom: 25px;
+            }
+            p{
+                line-height: 1.5;
+                color: #777;
+                margin: 0;
+                margin-bottom: 25px;
+                
+            }
+            .link{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1034px){
+    .para .container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+// para | end

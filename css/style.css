@@ -96,6 +96,25 @@ ul {
   margin: 10px 0 20px;
 }
 
+.link {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--main-color-theme);
+  border-radius: 3px;
+  border: 2px solid var(--main-color-theme);
+  display: inline-block;
+  padding: 13px 25px;
+  margin-top: 35px;
+  letter-spacing: 1px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.link:hover {
+  color: white;
+  background-color: var(--main-color-theme);
+}
+
 /* End Global rules */
 /* header */
 body {
@@ -1611,25 +1630,6 @@ footer .copy a:hover {
   top: 50%;
 }
 
-.about-us-2 .container .info a {
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--main-color-theme);
-  border-radius: 3px;
-  border: 2px solid var(--main-color-theme);
-  display: inline-block;
-  padding: 13px 25px;
-  margin-top: 35px;
-  letter-spacing: 1px;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.about-us-2 .container .info a:hover {
-  color: white;
-  background-color: var(--main-color-theme);
-}
-
 .about-us-2 .container .image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1649,6 +1649,71 @@ footer .copy a:hover {
   }
   .about-us-2 .container .info .lists {
     gap: 20px;
+  }
+}
+
+.para {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f9f9f9;
+}
+
+.para .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.para .container .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.para .container .image img {
+  width: 100%;
+}
+
+.para .container .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.para .container .info img {
+  width: 80px;
+}
+
+.para .container .info h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #111;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.para .container .info p {
+  line-height: 1.5;
+  color: #777;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.para .container .info .link {
+  margin-top: 0;
+}
+
+@media (max-width: 1034px) {
+  .para .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
