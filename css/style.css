@@ -115,6 +115,10 @@ ul {
   background-color: var(--main-color-theme);
 }
 
+.gr {
+  background-color: #f9f9f9;
+}
+
 /* End Global rules */
 /* header */
 body {
@@ -606,7 +610,6 @@ header .menu .sp:hover .feature {
 .special-dishes {
   padding-top: 75px;
   padding-bottom: 100px;
-  background-color: #f9f9f9;
 }
 
 .special-dishes .container {
