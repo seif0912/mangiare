@@ -79,12 +79,14 @@ ul {
 
 .head h1.title {
   margin: 10px 0 0;
+  font-weight: 400;
 }
 
 .head h2 {
   text-transform: uppercase;
   font-size: 34px;
   color: #111;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -1301,35 +1303,35 @@ header .menu .sp:hover .feature {
   padding: 10px;
 }
 
-.reservation .con form {
+form {
   background-color: rgba(255, 255, 255, 0.75);
   max-width: 450px;
   margin: auto;
   padding: 20px;
 }
 
-.reservation .con form .row {
+form .row {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.reservation .con form .row input,
-.reservation .con form .row select {
+form .row input,
+form .row select {
   width: 500%;
   padding: 10px;
   text-transform: uppercase;
   margin: 10px;
-  border: none;
+  border: 1px solid #eaeaea;
 }
 
-.reservation .con form .row input:focus,
-.reservation .con form .row select:focus {
+form .row input:focus,
+form .row select:focus {
   outline: none;
 }
 
-.reservation .con form input[type="submit"] {
+form input[type="submit"] {
   background-color: var(--main-color-theme);
   border: none;
   margin: 10px;
@@ -1887,6 +1889,58 @@ footer .copy a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 500px;
+  }
+}
+
+.reservation-about-3 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.reservation-about-3 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reservation-about-3 .container .image {
+  text-align: center;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.reservation-about-3 .container .form {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.reservation-about-3 .container .form form {
+  padding: 0;
+  background-color: unset;
+  width: 100%;
+}
+
+@media (max-width: 1034px) {
+  .reservation-about-3 .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reservation-about-3 .container .form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .reservation-about-3 .container .form .head {
+    text-align: center;
+  }
+  .reservation-about-3 .container .image {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

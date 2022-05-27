@@ -83,11 +83,13 @@ ul {
     }
     h1.title{
         margin: 10px 0 0;
+        font-weight: 400;
     }
     h2{
         text-transform: uppercase;
         font-size: 34px;
         color: #111;
+        font-weight: 600;
         margin: 0;
     }
     &.left{
@@ -1106,38 +1108,40 @@ header .menu .sp{
         top: 50%;
         left: 50%;
         padding: 10px;
-        form{
-            background-color: rgba(255, 255, 255, 0.75);
-            max-width: 450px;
-            margin: auto;
-            padding: 20px;
-            .row{
-                width: 100%;
-                display: flex;
-                input,
-                select{
-                    width: 500%;
-                    padding: 10px;
-                    text-transform: uppercase;
-                    margin: 10px;
-                    border: none;
-                    
-                    &:focus{
-                        outline: none;
-                    }
-                }
-            }
-            input[type="submit"]{
-                background-color: var(--main-color-theme);
-                border: none;
-                margin: 10px;
-                width: calc(100% - 20px);
-                padding: 10px;
-                text-transform: uppercase;
-                color: white;
-                cursor: pointer;
+        
+    }
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.75);
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    .row{
+        width: 100%;
+        display: flex;
+        input,
+        select{
+            width: 500%;
+            padding: 10px;
+            text-transform: uppercase;
+            margin: 10px;
+            border: 1px solid #eaeaea;
+            
+            &:focus{
+                outline: none;
             }
         }
+    }
+    input[type="submit"]{
+        background-color: var(--main-color-theme);
+        border: none;
+        margin: 10px;
+        width: calc(100% - 20px);
+        padding: 10px;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
     }
 }
 
@@ -1590,6 +1594,43 @@ footer{
     .about-us-3 .container .plates{
         flex-direction: column;
         max-width: 500px;
+    }
+}
+
+.reservation-about-3{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .image{
+            text-align: center;
+            flex-basis: 49%;
+        }
+        .form{
+            flex-basis: 49%;
+            form{
+                padding: 0;
+                background-color: unset;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1034px){
+    .reservation-about-3 .container {
+        justify-content: center;
+        .form{
+            flex-basis: 100%;
+            .head{
+                text-align: center;
+            }
+        }
+        .image{
+            display: none;
+        }
     }
 }
 
