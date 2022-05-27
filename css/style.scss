@@ -90,6 +90,12 @@ ul {
         color: #111;
         margin: 0;
     }
+    &.left{
+        text-align: left;
+        h2{
+            margin: 10px 0 20px;
+        }
+    }
 }
 
 /* End Global rules */
@@ -1302,3 +1308,89 @@ footer{
 }
 
 // about-us-1 | end
+
+// about-us-2
+
+.about-us-2{
+    .container{
+        display: flex;
+        align-items: center;
+        .info{
+            flex: 1;
+            p{
+                line-height: 1.5;
+                color: #777;
+                margin-top: 30px;
+            }
+            .lists{
+                display: flex;
+                gap: 100px;
+                margin-top: 35px;
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+                    padding-left: 30px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        height: 13px;
+                        width: 13px;
+                        border-radius: 50%;
+                        background-color: white;
+                        border: 3px solid var(--main-color-theme);
+                        left: 0;
+                        transform: translateY(-50%);
+                        top: 50%;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 50%;
+                        background-color: var(--main-color-theme);
+                        left: 6px;
+                        transform: translateY(-50%);
+                        top: 50%;
+                    }
+                }
+            }
+            a{
+                text-transform: uppercase;
+                font-weight: 600;
+                color: var(--main-color-theme);
+                border-radius: 3px;
+                border: 2px solid var(--main-color-theme);
+                display: inline-block;
+                padding: 13px 25px;
+                margin-top: 35px;
+                letter-spacing: 1px;
+                transition: .3s;
+                &:hover{
+                    color: white;
+                    background-color: var(--main-color-theme);
+                }
+            }
+        }
+        .image{
+            flex: 1;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 830px){
+    .about-us-2{
+        padding-top: 30px;
+        .container{
+            flex-direction: column;
+            .info .lists{
+                gap: 20px;
+            }
+        }
+    }
+}
+
+// about-us-2 | end
