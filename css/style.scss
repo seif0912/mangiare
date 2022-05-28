@@ -1477,100 +1477,100 @@ footer{
                 margin-top: 25px;
             }
         }
-        .plates{
-            flex-basis: 50%;
-            display: flex;
-            gap: 35px;
-            .boxes{
-                .box{
-                    &:not(:last-child){
-                        margin-bottom: 35px;
-                    }
-                    img{
-                        width: 100%;
-                    }
-                    position: relative;
-                    .inner-box{
-                        position: absolute;
-                        height: 80%;
-                        width: 85%;
-                        transform: translate(-50%, -50%);
-                        left: 50%;
-                        top: 50%;
-                        &::before{
-                            content: '';
-                            position: absolute;
-                            transform: translate(-50%, -50%);
-                            left: 50%;
-                            top: 50%;
-                            height: 100%;
-                            width: 0%;
-                            top: 50%;
-                            left: 50%;
-                            transition: .5s;
-                            opacity: 0;
-                            border-top: 1px solid white;
-                            border-bottom: 1px solid white;
-                        }
-                        &::after{
-                            content: '';
-                            position: absolute;
-                            transform: translate(-50%, -50%);
-                            left: 50%;
-                            top: 50%;
-                            transition: .5s;
-                            opacity: 0;
-                            height: 0%;
-                            width: 100%;
-                            top: 50%;
-                            left: 50%;
-                            border-left: 1px solid white;
-                            border-right: 1px solid white;
-                        }
-                        h3{
-                            position: absolute;
-                            transform: translate(-50%, -50%);
-                            left: 50%;
-                            top: 60%;
-                            color: rgba(255, 255, 255, 0.9);
-                            font-family: 'Great Vibes', cursive;
-                            font-size: 50px;
-                            font-weight: normal;
-                            margin: 0;
-                            letter-spacing: 2px;
-                            transition: .5s;
-                            z-index: 5;
-                        }
-                        
+    }
+}
+.plates{
+    flex-basis: 50%;
+    display: flex;
+    gap: 35px;
+    .boxes{
+        .box{
+            &:not(:last-child){
+                margin-bottom: 35px;
+            }
+            img{
+                width: 100%;
+            }
+            position: relative;
+            .inner-box{
+                position: absolute;
+                height: 80%;
+                width: 85%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 50%;
+                    height: 100%;
+                    width: 0%;
+                    top: 50%;
+                    left: 50%;
+                    transition: .5s;
+                    opacity: 0;
+                    border-top: 1px solid white;
+                    border-bottom: 1px solid white;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 50%;
+                    transition: .5s;
+                    opacity: 0;
+                    height: 0%;
+                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                }
+                h3{
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 60%;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 50px;
+                    font-weight: normal;
+                    margin: 0;
+                    letter-spacing: 2px;
+                    transition: .5s;
+                    z-index: 5;
+                }
+                
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.25);
+                transition: .5s;
+            }
+            &:hover{
+                &::before{
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                h3{
+                    top: 50%;
+                    color: white;
+                }
+                .inner-box{
+                    &::after{
+                        height: 101%;
+                        opacity: 1;
                     }
                     &::before{
-                        content: '';
-                        position: absolute;
-                        height: 100%;
-                        width: 100%;
-                        top: 0;
-                        left: 0;
-                        background-color: rgba(0, 0, 0, 0.25);
-                        transition: .5s;
-                    }
-                    &:hover{
-                        &::before{
-                            background-color: rgba(0, 0, 0, 0.5);
-                        }
-                        h3{
-                            top: 50%;
-                            color: white;
-                        }
-                        .inner-box{
-                            &::after{
-                                height: 101%;
-                                opacity: 1;
-                            }
-                            &::before{
-                                width: 101%;
-                                opacity: 1;
-                            }
-                        }
+                        width: 101%;
+                        opacity: 1;
                     }
                 }
             }
@@ -1637,3 +1637,63 @@ footer{
 }
 
 // about us 3 | end
+
+// services style 1 
+
+.speciality-services-style-1{
+    padding: {
+        top: 75px;
+        bottom: 75px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info{
+            flex-basis: 49%;
+            margin-top: 50px;
+            .boxes{
+                display: flex;
+                // flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                .box{
+                    max-width: 300px;
+                    img{
+                        width: 80px;
+                        transition: .3s;
+                    }
+                    &:hover img{
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+                    }
+                    h3{
+                        text-transform: capitalize;
+                        color: #191b1d;
+                    }
+                }
+            }
+        }
+        .plates{
+            flex-basis: 48%;
+        }
+    }
+}
+
+@media (max-width: 1059px){
+    .speciality-services-style-1{
+        .plates,
+        .info .boxes{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .speciality-services-style-1 .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+// services style 1 | end

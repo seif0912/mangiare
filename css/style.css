@@ -1751,7 +1751,7 @@ footer .copy a:hover {
   margin-top: 25px;
 }
 
-.about-us-3 .container .plates {
+.plates {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   display: -webkit-box;
@@ -1760,19 +1760,19 @@ footer .copy a:hover {
   gap: 35px;
 }
 
-.about-us-3 .container .plates .boxes .box {
+.plates .boxes .box {
   position: relative;
 }
 
-.about-us-3 .container .plates .boxes .box:not(:last-child) {
+.plates .boxes .box:not(:last-child) {
   margin-bottom: 35px;
 }
 
-.about-us-3 .container .plates .boxes .box img {
+.plates .boxes .box img {
   width: 100%;
 }
 
-.about-us-3 .container .plates .boxes .box .inner-box {
+.plates .boxes .box .inner-box {
   position: absolute;
   height: 80%;
   width: 85%;
@@ -1782,7 +1782,7 @@ footer .copy a:hover {
   top: 50%;
 }
 
-.about-us-3 .container .plates .boxes .box .inner-box::before {
+.plates .boxes .box .inner-box::before {
   content: '';
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -1800,7 +1800,7 @@ footer .copy a:hover {
   border-bottom: 1px solid white;
 }
 
-.about-us-3 .container .plates .boxes .box .inner-box::after {
+.plates .boxes .box .inner-box::after {
   content: '';
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -1818,7 +1818,7 @@ footer .copy a:hover {
   border-right: 1px solid white;
 }
 
-.about-us-3 .container .plates .boxes .box .inner-box h3 {
+.plates .boxes .box .inner-box h3 {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1835,7 +1835,7 @@ footer .copy a:hover {
   z-index: 5;
 }
 
-.about-us-3 .container .plates .boxes .box::before {
+.plates .boxes .box::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -1847,21 +1847,21 @@ footer .copy a:hover {
   transition: .5s;
 }
 
-.about-us-3 .container .plates .boxes .box:hover::before {
+.plates .boxes .box:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.about-us-3 .container .plates .boxes .box:hover h3 {
+.plates .boxes .box:hover h3 {
   top: 50%;
   color: white;
 }
 
-.about-us-3 .container .plates .boxes .box:hover .inner-box::after {
+.plates .boxes .box:hover .inner-box::after {
   height: 101%;
   opacity: 1;
 }
 
-.about-us-3 .container .plates .boxes .box:hover .inner-box::before {
+.plates .boxes .box:hover .inner-box::before {
   width: 101%;
   opacity: 1;
 }
@@ -1944,6 +1944,84 @@ footer .copy a:hover {
   }
   .reservation-about-3 .container .image {
     display: none;
+  }
+}
+
+.speciality-services-style-1 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.speciality-services-style-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.speciality-services-style-1 .container .info {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  margin-top: 50px;
+}
+
+.speciality-services-style-1 .container .info .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.speciality-services-style-1 .container .info .boxes .box {
+  max-width: 300px;
+}
+
+.speciality-services-style-1 .container .info .boxes .box img {
+  width: 80px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.speciality-services-style-1 .container .info .boxes .box:hover img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.speciality-services-style-1 .container .info .boxes .box h3 {
+  text-transform: capitalize;
+  color: #191b1d;
+}
+
+.speciality-services-style-1 .container .plates {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+@media (max-width: 1059px) {
+  .speciality-services-style-1 .plates,
+  .speciality-services-style-1 .info .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .speciality-services-style-1 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
