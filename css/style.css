@@ -265,6 +265,10 @@ header .menu > li .main-link:hover::before {
   width: 100%;
 }
 
+header .menu > li .main-link.active::before {
+  width: 100%;
+}
+
 @media (max-width: 1034px) {
   header {
     margin-top: 0;
@@ -372,6 +376,10 @@ header .sub-menu li::before {
 }
 
 header .sub-menu li:hover::before {
+  width: calc(100% - 30px);
+}
+
+header .sub-menu li.active::before {
   width: calc(100% - 30px);
 }
 

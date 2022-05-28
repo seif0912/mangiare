@@ -233,7 +233,9 @@ header .menu{
             &:hover::before{
                 width: 100%;
             }
-            
+            &.active::before{
+                width: 100%;
+            }
         }
 
     }
@@ -329,6 +331,9 @@ header .sub-menu{
             border-radius: 5px;
         }
         &:hover::before{
+            width: calc(100% - 30px);
+        }
+        &.active::before{
             width: calc(100% - 30px);
         }
     } 
